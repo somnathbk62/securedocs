@@ -1,0 +1,370 @@
+/* Custom CSS for Secure Dox Application */
+
+:root {
+  --primary-color: #06BBCC;
+  --primary-dark: #059aa8;
+  --secondary-color: #181d38;
+  --light-color: #F0FBFC;
+  --gray-color: #f8f9fa;
+  --text-color: #495057;
+  --border-color: #ced4da;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+}
+
+/* General Styles */
+body {
+  font-family: 'Nunito', sans-serif;
+  color: var(--text-color);
+  background-color: #f8f9fa;
+}
+
+/* Card Styles */
+.auth-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.auth-card:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.auth-card .card-header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom: none;
+}
+
+.auth-card .card-body {
+  padding: 2rem;
+}
+
+.auth-card .card-footer {
+  background-color: white;
+  border-top: none;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Form Styles */
+.form-control {
+  border-radius: 5px;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(6, 187, 204, 0.25);
+}
+
+.form-floating > label {
+  padding: 0.75rem 1rem;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  color: var(--primary-color);
+  transform: scale(0.85) translateY(-0.75rem) translateX(0.15rem);
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn-primary:disabled {
+  background-color: #7fd4dc;
+  border-color: #7fd4dc;
+}
+
+/* Header Styles */
+.page-header {
+  background: linear-gradient(rgba(24, 29, 56, .8), rgba(24, 29, 56, .8)), url(../img/carousel-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 0;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Link Styles */
+.auth-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.auth-link:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* Checkbox Styles */
+.form-check-input {
+  width: 1.25em;
+  height: 1.25em;
+  margin-top: 0.25em;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.form-check-label {
+  cursor: pointer;
+  padding-left: 0.5rem;
+}
+
+/* Divider with text */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.divider::before {
+  margin-right: 1rem;
+}
+
+.divider::after {
+  margin-left: 1rem;
+}
+
+/* Icon Styles */
+.auth-icon {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+/* Animation Styles */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .auth-card {
+    margin: 0 1rem;
+  }
+  
+  .page-header {
+    padding: 3rem 0;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Custom Loader */
+.custom-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+/* Toast Customization */
+.Toastify__toast {
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.Toastify__toast--success {
+  background-color: var(--success-color);
+}
+
+.Toastify__toast--error {
+  background-color: var(--danger-color);
+}
+
+/* Form validation styles */
+.invalid-feedback {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Add illustration container */
+.auth-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.auth-illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Brand logo in auth pages */
+.auth-logo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.auth-logo img {
+  height: 60px;
+  width: auto;
+}
+
+/* Social login buttons */
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-social {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-google {
+  background-color: #DB4437;
+}
+
+.btn-facebook {
+  background-color: #4267B2;
+}
+
+.btn-twitter {
+  background-color: #1DA1F2;
+}
+
+/* Custom switch for dark mode */
+.form-switch .form-check-input {
+  width: 2.5em;
+  height: 1.25em;
+}
+
+/* Dashboard cards */
+.dashboard-card {
+  border-radius: 10px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: none;
+  overflow: hidden;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card .card-header {
+  background-color: white;
+  border-bottom: none;
+  padding: 1.5rem;
+}
+
+.dashboard-card .card-body {
+  padding: 1.5rem;
+}
+
+.dashboard-card .card-footer {
+  background-color: white;
+  border-top: none;
+  padding: 1.5rem;
+}
+
+/* Stats counter */
+.stats-counter {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.stats-label {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-top: 0.5rem;
+}
+
+/* Progress bar */
+.progress {
+  height: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #e9ecef;
+  margin: 1rem 0;
+}
+
+.progress-bar {
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+}
