@@ -1,6 +1,7 @@
 # 📄 Secure Docs – Document Management System
 
-Secure Docs is a web-based document management system tailored for educational institutions. It empowers **administrators** to manage student data, ID cards, and certificates, while **students** can securely view and request their personal academic documents.
+Secure Docs is a web-based document management system for educational institutions. It empowers **administrators** to manage student data, ID cards, and certificates, while **students** can securely view and request their personal academic documents.
+
 
 ## Built with **React** and **Firebase**, the system ensures real-time updates, seamless authentication, and role-based access control.
 
