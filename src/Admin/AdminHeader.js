@@ -44,9 +44,10 @@ export default function AdminHeader(){
        
         <div className="nav-item dropdown">
           <Link
-            href="#"
+            to="#"
             className="nav-link dropdown-toggle"
             data-bs-toggle="dropdown"
+            onClick={e => e.preventDefault()}
           >
             Students
           </Link>
@@ -63,9 +64,10 @@ export default function AdminHeader(){
        
         <div className="nav-item dropdown">
           <Link
-            href="#"
+            to="#"
             className="nav-link dropdown-toggle"
             data-bs-toggle="dropdown"
+            onClick={e => e.preventDefault()}
           >
             Requests
           </Link>

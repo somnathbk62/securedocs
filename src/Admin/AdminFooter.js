@@ -23,7 +23,7 @@ export default function AdminFooter(){
       <div className="row">
         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
           ©{" "}
-          <a className="border-bottom" href="#">
+          <a className="border-bottom" href="/">
             Secured Docs
           </a>
           , All Right Reserved.

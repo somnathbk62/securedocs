@@ -1,4 +1,4 @@
-import { addDoc, collection, doc, setDoc, Timestamp } from "firebase/firestore";
+import { doc, setDoc, Timestamp } from "firebase/firestore";
 import { useState } from "react";
 import { auth, db, storage, styleObj } from "../Firebase";
 import { toast, ToastContainer } from "react-toastify";
