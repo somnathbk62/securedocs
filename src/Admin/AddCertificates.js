@@ -97,7 +97,7 @@ export default function AddCertificates() {
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb justify-content-center">
                       <li className="breadcrumb-item">
-                        <a className="text-white" href="#">
+                        <a className="text-white" href="/admin/dashboard">
                           Dashboard
                         </a>
                       </li>
