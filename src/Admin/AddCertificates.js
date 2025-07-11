@@ -1,15 +1,9 @@
 import {
   addDoc,
   collection,
-  doc,
-  getDoc,
-  getDocs,
-  query,
-  setDoc,
   Timestamp,
-  where,
 } from "firebase/firestore";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { db, storage, styleObj } from "../Firebase";
 import { toast, ToastContainer } from "react-toastify";
