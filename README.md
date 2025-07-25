@@ -2,16 +2,16 @@
 
 Secure Docs is a web-based document management system for educational institutions. It empowers **administrators** to manage student data, ID cards, and certificates, while **students** can securely view and request their personal academic documents.
 
-
 ## Built with **React** and **Firebase**, the system ensures real-time updates, seamless authentication, and role-based access control.
 
 ## 🧪 Demo Access
 
 **Student Demo Credentials:**
+
 - **Email:** riya.sharma.demo@gmail.com
 - **Password:** Demo@123
 
-*Use these credentials to test the student side of the application.*
+_Use these credentials to test the student side of the application._
 
 ## 🔗 Table of Contents
 
@@ -145,9 +145,16 @@ src/Authentication/ – Login, password reset, admin login
 src/context/AuthContext.js – Role management and auth handling
 
 src/components/ProtectedRoute.js – Role-based route protection
+````
 
+## 🚀 Live Demo
+
+Check out the live project: [securefileshub.netlify.app](https://securefileshub.netlify.app/)
+
+```
 🪪 License
 This project is created for educational use. You can modify the code as needed to suit your use case.
 
 Developed with ❤️ using React and Firebase.
 ---
+```
